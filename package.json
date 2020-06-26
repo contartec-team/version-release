@@ -5,10 +5,6 @@
   "main": "index.js",
   "author": "contartec",
   "license": "MIT",
-  "scripts": {
-    "update-version": "node -e 'require(\"./lib/update-version\")()'",
-    "release-version": "node -e 'require(\"./lib/release-version\")()'"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
