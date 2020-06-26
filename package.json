@@ -1,0 +1,31 @@
+{
+  "name": "@contartec-team/version-release",
+  "version": "1.0.0-development",
+  "description": "Library to automate release generation and publish",
+  "main": "index.js",
+  "author": "contartec",
+  "license": "MIT",
+  "scripts": {
+    "update-version": "node -e 'require(\"./lib/update-version\")()'",
+    "release-version": "node -e 'require(\"./lib/release-version\")()'"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "changelog-parser": "^2.8.0",
+    "conventional-changelog-angular": "^5.0.10",
+    "conventional-changelog-writer": "^4.0.16",
+    "conventional-commits-parser": "^3.1.0",
+    "current-git-branch": "^1.1.0",
+    "dotenv": "^1.2.0",
+    "fs-extra": "^3.0.1",
+    "get-stream": "^5.1.0",
+    "github-base": "^1.0.0",
+    "into-stream": "^5.1.1",
+    "lodash": "^4.17.15",
+    "semver": "^7.3.2"
+  }
+}
