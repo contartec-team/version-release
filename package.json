@@ -15,7 +15,7 @@
     "conventional-changelog-writer": "^4.0.16",
     "conventional-commits-parser": "^3.1.0",
     "current-git-branch": "^1.1.0",
-    "dotenv": "^1.2.0",
+    "dotenv": "^8.2.0",
     "fs-extra": "^3.0.1",
     "get-stream": "^5.1.0",
     "github-base": "^1.0.0",
