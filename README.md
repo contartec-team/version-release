@@ -19,3 +19,5 @@ On top of [semantic-release](https://github.com/semantic-release/semantic-releas
 ```
 
 ## Docs
+
+https://contartec-team.github.io/version-release/
