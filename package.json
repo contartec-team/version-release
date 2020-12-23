@@ -4,6 +4,7 @@
   "description": "Library to automate release generation and publish",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint -c ./.eslintrc.json \"lib/**/*.js\"",
     "docs": "documentation build lib/** -f html -o docs",
     "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'"
   },
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "documentation": "^13.1.0",
+    "eslint": "^7.16.0",
     "husky": "^4.3.6"
   }
 }
