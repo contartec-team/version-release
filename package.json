@@ -4,7 +4,7 @@
   "description": "Library to automate release generation and publish",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint -c ./.eslintrc.json \"lib/**/*.js\"",
+    "lint": "eslint -c ./.eslintrc \"lib/**/*.js\" --ignore-pattern \"lib/notes-generator/**/*.js\"",
     "docs": "documentation build lib/** -f html -o docs",
     "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'"
   },

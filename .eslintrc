@@ -14,8 +14,10 @@
     "eqeqeq": "off",
     "keyword-spacing": "error",
     "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    "require-await": 1,
     "no-unexpected-multiline": "off",
+    "require-await": 1,
+    "require-jsdoc": 1,
+    "valid-jsdoc": 1,
     "indent": [
       "error",
       2,
