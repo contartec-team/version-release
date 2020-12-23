@@ -3,24 +3,40 @@
   "version": "0.1.0",
   "description": "Library to automate release generation and publish",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint -c ./.eslintrc \"lib/**/*.js\" --ignore-pattern \"lib/notes-generator/**/*.js\"",
+    "docs": "documentation build lib/** -f html -o docs",
+    "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'"
+  },
   "author": "contartec",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "@contartec-team/git-hooks": "git+https://github.com/contartec-team/git-hooks.git",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
     "changelog-parser": "^2.8.0",
     "conventional-changelog-writer": "^4.0.16",
     "conventional-commits-parser": "^3.1.0",
     "current-git-branch": "^1.1.0",
-    "dotenv": "^1.2.0",
-    "fs-extra": "^3.0.1",
-    "get-stream": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.0",
+    "get-stream": "^6.0.0",
     "github-base": "^1.0.0",
-    "into-stream": "^5.1.1",
+    "into-stream": "^6.0.0",
     "lodash": "^4.17.15",
     "semver": "^7.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm run update:docs"
+    }
+  },
+  "devDependencies": {
+    "documentation": "^13.1.0",
+    "eslint": "^7.16.0",
+    "husky": "^4.3.6"
   }
 }
