@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Library to automate release generation and publish",
   "main": "index.js",
+  "scripts": {
+    "docs": "documentation build lib/** -f html -o docs",
+    "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'"
+  },
   "author": "contartec",
   "license": "MIT",
   "publishConfig": {
@@ -22,5 +26,13 @@
     "into-stream": "^5.1.1",
     "lodash": "^4.17.15",
     "semver": "^7.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run update:docs"
+    }
+  },
+  "devDependencies": {
+    "documentation": "^13.1.0"
   }
 }
