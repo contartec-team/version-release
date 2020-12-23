@@ -330,7 +330,7 @@
 
   <p>Generates a <code>release</code> and (maybe) publishes the package</p>
 
-    <div class='pre p1 fill-light mt0'>releaseVersion(params: <a href="#releaseversionparams">ReleaseVersionParams</a>)</div>
+    <div class='pre p1 fill-light mt0'>releaseVersion(params: <a href="#releaseversionparams">ReleaseVersionParams</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
   
   
 
@@ -362,6 +362,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        The release object
+
+      
+    
   
 
   
@@ -483,7 +491,12 @@
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>notesObject</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    
+	    The 
+<code>release note</code>
+ object (@see 
+<a href="#getlastnotefromchangelog">getLastNoteFromChangelog</a>
+)
+
           </div>
           
         </div>
@@ -536,7 +549,7 @@
 
   <p>Generate or not changelog and updates package.json version based on the release type parsed from PR messages</p>
 
-    <div class='pre p1 fill-light mt0'>updateVersion()</div>
+    <div class='pre p1 fill-light mt0'>updateVersion(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
   
   
 
@@ -551,6 +564,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
   
 
   
@@ -744,7 +765,7 @@
 
   <p>Updates the package.json file version</p>
 
-    <div class='pre p1 fill-light mt0'>updatePackageJson(version: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+    <div class='pre p1 fill-light mt0'>updatePackageJson(version: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
   
   
 
@@ -773,6 +794,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
   
 
   
@@ -808,7 +837,7 @@
 
   <p>Gets the description of the branch PR and creates text file with it's messages</p>
 
-    <div class='pre p1 fill-light mt0'>getPullRequestDescription()</div>
+    <div class='pre p1 fill-light mt0'>getPullRequestDescription(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
   
   
 
@@ -823,6 +852,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
   
 
   
@@ -858,7 +895,7 @@
 
   <p>Gets the last release version from Github, if no release is found gets the version from package.json</p>
 
-    <div class='pre p1 fill-light mt0'>getLastVersion()</div>
+    <div class='pre p1 fill-light mt0'>getLastVersion(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
   
   
 
@@ -873,6 +910,16 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        The last 
+<code>package</code>
+ version
+
+      
+    
   
 
   
@@ -908,7 +955,7 @@
 
   <p>Generates a CHANGELOG.md or updates it with new release notes</p>
 
-    <div class='pre p1 fill-light mt0'>generateChangelog(notes: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+    <div class='pre p1 fill-light mt0'>generateChangelog(notes: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
   
   
 
@@ -937,6 +984,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
   
 
   
@@ -972,7 +1027,7 @@
 
   <p>Generates a string in conventional-changelog format with the release notes</p>
 
-    <div class='pre p1 fill-light mt0'>generateNotes(changelogContext: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, parsedCommits: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</div>
+    <div class='pre p1 fill-light mt0'>generateNotes(changelogContext: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, parsedCommits: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
   
   
 
@@ -1011,6 +1066,14 @@
   
 
   
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        A string in conventional-changelog format with the release notes
+
+      
+    
+  
 
   
 
@@ -1045,7 +1108,7 @@
 
   <p>Commit the release files (changelog and package.json) on the branch</p>
 
-    <div class='pre p1 fill-light mt0'>commitVersionFiles(nextReleaseVersion: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+    <div class='pre p1 fill-light mt0'>commitVersionFiles(nextReleaseVersion: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
   
   
 
@@ -1063,7 +1126,8 @@
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>nextReleaseVersion</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-	    
+	    The new release version
+
           </div>
           
         </div>
@@ -1073,6 +1137,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        
+
+      
+    
   
 
   
