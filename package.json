@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint -c ./.eslintrc \"lib/**/*.js\" --ignore-pattern \"lib/notes-generator/**/*.js\"",
     "docs": "documentation build lib/** -f html -o docs",
-    "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'"
+    "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'",
+    "update-version": "node -e 'require(\"@contartec-team/version-release\").updateVersion()'",
+    "release-version": "node -e 'require(\"@contartec-team/version-release\").releaseVersion()'"
   },
   "author": "contartec",
   "license": "MIT",
@@ -15,6 +17,7 @@
   },
   "dependencies": {
     "@contartec-team/git-hooks": "git+https://github.com/contartec-team/git-hooks.git",
+    "@contartec-team/version-release": "git+https://github.com/contartec-team/version-release.git",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
     "changelog-parser": "^2.8.0",
@@ -26,7 +29,6 @@
     "get-stream": "^6.0.0",
     "github-base": "^1.0.0",
     "into-stream": "^6.0.0",
-    "lodash": "^4.17.15",
     "semver": "^7.3.2"
   },
   "husky": {
