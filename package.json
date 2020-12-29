@@ -26,7 +26,6 @@
     "get-stream": "^6.0.0",
     "github-base": "^1.0.0",
     "into-stream": "^6.0.0",
-    "lodash": "^4.17.15",
     "semver": "^7.3.2"
   },
   "husky": {
