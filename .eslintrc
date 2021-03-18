@@ -14,10 +14,9 @@
     "eqeqeq": "off",
     "keyword-spacing": "error",
     "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "require-yield": "error",
+    "require-await": "error",
     "no-unexpected-multiline": "off",
-    "require-await": 1,
-    "require-jsdoc": 1,
-    "valid-jsdoc": 1,
     "indent": [
       "error",
       2,
@@ -44,6 +43,17 @@
       {
         "destructuring": "any",
         "ignoreReadBeforeAssign": false
+      }
+    ],
+    "arrow-parens": [
+      2,
+      "as-needed"
+    ],
+    "require-jsdoc": ["error"],
+    "valid-jsdoc": [
+      "error",
+      {
+        "requireParamDescription": false
       }
     ]
   }
