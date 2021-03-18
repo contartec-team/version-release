@@ -1,6 +1,6 @@
 {
   "name": "@contartec-team/version-release",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library to automate release generation and publish",
   "main": "index.js",
   "scripts": {
