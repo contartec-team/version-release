@@ -31,14 +31,14 @@
     "into-stream": "^6.0.0",
     "semver": "^7.3.2"
   },
+  "devDependencies": {
+    "documentation": "^13.1.0",
+    "eslint": "^7.20.0",
+    "husky": "^5.1.0"
+  },
   "husky": {
     "hooks": {
       "pre-push": "npm run lint && npm run update:docs"
     }
-  },
-  "devDependencies": {
-    "documentation": "^13.1.0",
-    "eslint": "^7.16.0",
-    "husky": "^4.3.6"
   }
 }
