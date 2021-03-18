@@ -34,6 +34,8 @@ Create a PR and run `npm run update-version`, the script will:
 - Generate/Update the `CHANGELOG.md` (also based on/with the PR's msg);
 - Commit the change (`package.json` and `CHANGELOG.md`) to remote on its associated branch.
 
+> Before `npm run update-version` set the `VERSION_RELEASE_GIT_AUTHOR_NAME` and `VERSION_RELEASE_GIT_AUTHOR_EMAIL` `env vars`
+
 ### 3/3
 
 Merge the PR (remember to remove `[skip ci]` text from the final PR's msg) and run `npm run release-version`, then it upload on `remote`:
