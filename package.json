@@ -34,7 +34,7 @@
   "devDependencies": {
     "documentation": "^13.1.0",
     "eslint": "^7.20.0",
-    "husky": "^5.1.0"
+    "husky": "^7.0.0"
   },
   "husky": {
     "hooks": {
