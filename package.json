@@ -1,5 +1,5 @@
 {
-  "name": "@contartec-team/version-release",
+  "name": "@kajoo-team/version-release",
   "version": "0.1.1",
   "description": "Library to automate release generation and publish",
   "main": "index.js",
@@ -7,17 +7,17 @@
     "lint": "eslint -c ./.eslintrc \"lib/**/*.js\" --ignore-pattern \"lib/notes-generator/**/*.js\"",
     "docs": "documentation build lib/** -f html -o docs",
     "update:docs": "npm run docs && git add docs/. && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'",
-    "update-version": "node -e 'require(\"@contartec-team/version-release\").updateVersion()'",
-    "release-version": "node -e 'require(\"@contartec-team/version-release\").releaseVersion()'"
+    "update-version": "node -e 'require(\"@kajoo-team/version-release\").updateVersion()'",
+    "release-version": "node -e 'require(\"@kajoo-team/version-release\").releaseVersion()'"
   },
-  "author": "contartec",
+  "author": "kajoo",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@contartec-team/git-hooks": "git+https://github.com/contartec-team/git-hooks.git",
-    "@contartec-team/version-release": "git+https://github.com/contartec-team/version-release.git",
+    "@kajoo-team/git-hooks": "git+https://github.com/kajoo-team/git-hooks.git",
+    "@kajoo-team/version-release": "git+https://github.com/kajoo-team/version-release.git",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
     "changelog-parser": "^2.8.0",
